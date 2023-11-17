@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"
+    style="height: 1300px;">
+<head>
+<meta charset="utf-8" />
+
+<title>Finalizar compra</title>
+
+<!-- icones -->
+	<link rel="icon" type="image/x-icon" href="assets/tartaruga.png" />
+<!-- CSS -->
+	<link href="css/stylefc.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    
+    <!--fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+
+    <!-- Parte do pagamento-->
+    
+<div class="telinha">
+    <div class="cartao">
+
+        <div class="leftside">
+           
+        </div>
+
+            <div class="rightside">
+                <form action="">
+                    <h1>Finalizar compra</h1>
+
+                    <h2>Informações de pagamento</h2>
+
+                    <p>Nome (igual ao cartão)</p>
+                    <input type="text" class="inputbox" name="name" required />
+
+                    <p>Número do cartão</p>
+                    <input type="text" class="inputbox" name="card_number" id="card_number" required placeholder="0000 0000 0000 000" />
+
+                    <p>Escolha o cartão</p>
+                        <select class="inputbox" name="card_type" id="card_type" required>
+                            <option value="">--Selecione o tipo do cartão--</option>
+                            <option value="Visa">Visa</option>
+                            <option value="MasterCard">MasterCard</option>
+                        </select>
+                
+                        <div class="expcvv">
+
+                            <p class="expcvv_text">Vencimento</p>
+                            <input class="inputbox" name="exp_date" id="exp_date" required="" placeholder="MM/AA">
+
+                            <p class="expcvv_text2">CVV</p>
+                            <input type="password" class="inputbox" name="cvv" id="cvv" required placeholder="000" />
+                        </div>
+
+                            <p></p>
+
+                            <div class="centered-button">
+                                <a href="finalizaçãodeCompra.html" class="button">Finalizar</a>
+                            </div>
+
+                           <!---- <button type="submit" class="button">Finalizar</button> -->
+                </form>
+            </div>
+        </div>
+    </div>
+  
+    
+
+
+    <!--java-->
+
+<script src="menu.js"></script>
+
+
+</body>
+</html>
